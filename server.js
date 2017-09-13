@@ -50,6 +50,12 @@ app.get('/bad', function(req, res) {
     });
 });
 
+app.get('/projects', function(req, res) {
+    res.render('projects.hbs', {
+        pageTitle: 'Projects',
+    })
+})
+
 
 app.listen(3000, function() {
     console.log('loading');
